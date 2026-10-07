@@ -1,0 +1,195 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*  Navigation Bar: Logo and Image */
+
+#logo{
+    margin: 750 750px;
+}
+
+#logo img{
+    /* height: 56px;
+    margin: 705px 705px; */
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Ballo Bhai', cursive;
+}
+
+#navbar::before{
+   content: "";
+   background-color: aqua;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: .4;
+}
+
+#navbar ul li{
+  color: white;
+  background-color: rgb(197, 15, 218);
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+}
+
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
+}
+
+#home::before{
+     content: "";
+    /* background: url('../bg1.jpg') no-repeat center/cover */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;  
+}
+#home h1{
+    color: brown;
+    text-align: center;
+    font-family: 'Bree Serif', serif; 
+}
+
+#home p{
+    color: brown;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgb(222, 223, 227);
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    font-size: 2.3rem;
+    font-family: 'Bree Serif',serif;
+}
+
+
+/* Client Section */
+
+#client-section{
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url(https://www.shutterstock.com/image-photo/food-background-banner-website-selection-260nw-1753925045.jpg);
+  height: 100%;
+  width: 100px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img{
+    height: 144px;  
+}
+
+
+
+/* Utility Classes */
+
+.h-primary{
+    font-family: 'Bree Serif',serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif',serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+  
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid green;
+    background-color: rgb(156, 244, 23);
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: black;
+    background-color: lavender;
+}
+
+.center{
+    text-align: center;
+}

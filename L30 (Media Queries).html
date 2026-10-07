@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+<style>
+    .box{
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        
+        text-align: center;
+    }
+    @media (max-width:300px){
+        #box1{
+            display: block;
+            background-color: blueviolet;
+        } 
+    }
+    @media (max-width:500px;) and (min-width:300px;){
+        #box2{
+            display: block;
+            background-color: blue;
+        } 
+    }
+    @media (max-width:800px;) and (min-width:500px;){
+        #box3{
+            display: block;
+            background-color: rgb(219, 120, 14);
+        } 
+    }
+    @media (max-width:1100px;) and (min-width:800px;){
+        #box4{
+            display: block;
+            background-color: rgb(122, 214, 24);
+        } 
+    }
+</style>
+</head>
+<body>
+
+     <!-- It is use for the responsive website and the view of our website seems good on different different types od screen  -->
+
+     <div class="box" id="box1">Mai ek Iphone hu</div>
+     <div class="box" id="box2">Mai ek Tab hu</div>
+     <div class="box" id="box3">Mai ek Laptop hu</div>
+     <div class="box" id="box4">Mai ek Computer hu</div>
+
+</body>
+</html>

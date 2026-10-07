@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+           
+        }
+        .card{
+            padding: 23px 12px;
+            border: 5px solid red;
+            margin: 50px;
+            background-color: bisque;
+            /* box-shadow: 10px 10px green; 
+             It is use for right and bottom shadow */
+
+
+            /* box-shadow: -10px -10px green;  */
+            /* It is use for the left and upper shadow */
+
+            box-shadow: 5px 5px 50px green;
+            /* Third px is use for the blor shadow */
+            box-shadow: 5px 5px 50px red;
+        }
+        #card1 h2{
+            text-shadow: 3px 3px violet;
+        }
+        #card2 h2{
+            text-shadow: 3px 3px grey;
+        }
+        #card3 h2{
+            text-shadow: 3px 3px yellow;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card" id="card1">
+        <h2>This is HTML Course</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi beatae, ratione, dicta sit est perferendis, molestiae laborum hic cum quam ipsam voluptatibus commodi.</p>
+        </div>
+
+    <div class="card" id="card2">
+        <h2>This is CSS Course</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi beatae, ratione, dicta sit est perferendis, molestiae laborum hic cum quam ipsam voluptatibus commodi.</p>
+        </div>
+
+    <div class="card" id="card3">
+        <h2>This is JS Course</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi beatae, ratione, dicta sit est perferendis, molestiae laborum hic cum quam ipsam voluptatibus commodi.</p>
+
+    </div>
+
+</div>
+
+  </div>
+</body>
+</html>

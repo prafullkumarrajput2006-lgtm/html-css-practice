@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: white;
+
+
+        /* background: url(https://149842033.v2.pressablecdn.com/wp-content/uploads/2019/06/html-food-website-templates-1000x750.jpg) no-repeat center center;   It is also not working ... I don't know why; */
+
+        background: url('https://source.unplash.com//collection/190727/1600x900') no-repeat center center; 
+    }
+    header{
+        color: brown;
+        background-color: aquamarine;
+        border: 5px solid;
+        padding: 20px;
+        
+        
+        
+    }
+    section{
+        border: 10px solid black;
+        padding: 50px;
+        text-align: center;
+    }
+    ul{
+        text-align: center;
+    }
+    li{
+        list-style: none;
+        border: 5px solid rgb(82, 17, 180);
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        font-size: 4em;
+
+        /* text-align: center;   It is not working ...I don't know */
+        /* align-items: center;  It is not working...I don't know why */
+        }h3{ 
+            font-size: 4em;
+
+        }
+        section: ::before{
+            ::content:"This is the first content"
+        }
+        
+</style>
+</head>
+<body>
+    <header>
+       <nav class="navbar">
+        <ul>
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Services</li>
+            <li class="item">Contact us</li>
+        </ul><hr>
+
+       </nav>
+       <section>
+        <h3>Welcome to the Coading world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur sequi facere temporibus nisi cupiditate voluptatibus eum natus ipsam repudiandae, vitae nemo eos porro fugiat explicabo veritatis a voluptas eveniet consectetur corporis voluptatem optio beatae.</p>
+       </section>
+    </header>
+</body>
+</html>

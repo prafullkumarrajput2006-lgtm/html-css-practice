@@ -1,0 +1,36 @@
+    /* body{
+            background-color: yellow;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: xx-small;
+            font-style: oblique;
+            text-align: center;
+            text-decoration: dotted;
+        } */
+
+
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    color: white;
+    background: #c4adad;
+    text-align: center;
+    font-style: italic;
+}
+
+h1{
+    color: bisque;
+    
+    background: #000;
+}
+
+p{
+    color: brown;
+    background: yellow;
+}

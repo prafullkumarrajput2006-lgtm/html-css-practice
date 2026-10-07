@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time out</title>
+
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("This is a container 58");
+
+        
+       // SetTimeout...
+       // Allows us to runthe function once after the interval of time
+
+      //   ClerarTimeout...
+       // Allows us to runt he function repeatedly after the interval of time
+
+        function greet(name, byeText){
+            console.log("Hello Good Morning" + name+ " " + byeText);
+        }
+
+
+       // setTimeout(greet, 5000, "Harry", "Take Care");
+       //It is use for load the website for 5 sec
+
+    
+
+   //timeOut = setTimeout(greet, 5000, "Prafull", "Take Care"); 
+   //console.log(timeOut);
+    //clearTimeout(timeOut);
+//It is use for clear the timeout
+
+
+
+//setInterval(greet, 1000, "Prafull", "How are you ?");
+//It is use for the repeated print command
+
+
+
+//intervalId = setIntervalId(greet, 1000, "Prafull", "How are you ?");
+//clearInterval(intervalId);
+//It is use for clear the clear the intervalId Command
+
+
+function displayTime(){
+    time = new Date();
+    console.log(time);
+    document.getElementById('item').innerHTML = time;
+
+}
+
+setInterval(displayTime, 1000);
+
+  </script>
+</body>
+</html>

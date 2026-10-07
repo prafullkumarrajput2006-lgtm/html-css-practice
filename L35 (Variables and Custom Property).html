@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Property</title>
+<style>
+    :root{
+        --box-color: violet;
+        
+    }
+    .box
+{
+    --box-color: violet; 
+    width: 200px;
+    height: 200px;
+    background-color: var(--box-color);
+    border: 5px solid red;
+    margin: 5px;
+    box-shadow: 5px 5px yellow;
+}
+.container{
+    display: flex;
+    background-color: var(--box-color);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 50vw;
+    height: 50vh;
+    
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhlJTIwZ3ltfGVufDB8fDB8fHww" alt="">
+
+    </div>
+</body>
+</html>
